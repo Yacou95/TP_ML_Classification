@@ -7,11 +7,7 @@ let gImage;
 
 function preload() {
   gClassifier = ml5.imageClassifier('MobileNet', modeleCharge);
-<<<<<<< Updated upstream
-  gImage = loadImage('img/hat.png');
-=======
   gImage = loadImage('img/Kitten.jpg');
->>>>>>> Stashed changes
 }
 function modeleCharge()
 {
@@ -21,6 +17,8 @@ function modeleCharge()
 }
 
 function setup() {
+  createCanvas(800,800);
+  image(gImage,0,0);
  // il faut initialiser le canvas & dessiner l'image
 }
 
