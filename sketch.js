@@ -7,7 +7,11 @@ let gImage;
 
 function preload() {
   gClassifier = ml5.imageClassifier('MobileNet', modeleCharge);
+<<<<<<< Updated upstream
   gImage = loadImage('img/hat.png');
+=======
+  gImage = loadImage('img/Kitten.jpg');
+>>>>>>> Stashed changes
 }
 function modeleCharge()
 {
